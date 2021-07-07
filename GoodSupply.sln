@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.28307.1401
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodSupply", "GoodSupply\GoodSupply.csproj", "{CC89DAEB-B9AA-4E53-B8C3-E7CE24B0EBB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodSupply.DataTransferObject", "GoodSupply.DataTransferObject\GoodSupply.DataTransferObject.csproj", "{F43EF7D1-20AF-43CB-94BB-DEF4E8372F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodSupply.PGRepository", "GoodSupply.PGRepository\GoodSupply.PGRepository.csproj", "{75A2D21B-0E5F-496C-8DD8-0730B3478919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodSupply.Business", "GoodSupply.Business\GoodSupply.Business.csproj", "{53598E25-E7BE-4611-A80C-25CDACE846C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{CC89DAEB-B9AA-4E53-B8C3-E7CE24B0EBB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC89DAEB-B9AA-4E53-B8C3-E7CE24B0EBB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC89DAEB-B9AA-4E53-B8C3-E7CE24B0EBB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43EF7D1-20AF-43CB-94BB-DEF4E8372F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43EF7D1-20AF-43CB-94BB-DEF4E8372F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43EF7D1-20AF-43CB-94BB-DEF4E8372F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43EF7D1-20AF-43CB-94BB-DEF4E8372F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A2D21B-0E5F-496C-8DD8-0730B3478919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A2D21B-0E5F-496C-8DD8-0730B3478919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A2D21B-0E5F-496C-8DD8-0730B3478919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A2D21B-0E5F-496C-8DD8-0730B3478919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53598E25-E7BE-4611-A80C-25CDACE846C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53598E25-E7BE-4611-A80C-25CDACE846C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53598E25-E7BE-4611-A80C-25CDACE846C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53598E25-E7BE-4611-A80C-25CDACE846C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

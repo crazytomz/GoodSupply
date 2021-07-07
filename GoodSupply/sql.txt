@@ -1,0 +1,37 @@
+﻿CREATE TABLE tbl_supplier
+(
+id SERIAL NOT NULL,
+supplier_name CHARACTER VARYING(100) NOT NULL,
+date_created TIMESTAMP NOT NULL default CURRENT_TIMESTAMP,
+CONSTRAINT "tbl_supplier_pkey" PRIMARY KEY (id)
+);
+CREATE TABLE tbl_order
+(
+id SERIAL NOT NULL,
+order_number CHARACTER VARYING(10) NOT NULL,
+order_date CHARACTER VARYING(12) NOT NULL,
+supplier_id INT NOT NULL,
+date_created TIMESTAMP NOT NULL default CURRENT_TIMESTAMP,
+CONSTRAINT "tbl_order_pkey" PRIMARY KEY (id)
+);
+ALTER TABLE tbl_order ADD FOREIGN KEY ("supplier_id") REFERENCES tbl_supplier (id);
+CREATE TABLE tbl_order_detail
+(
+id SERIAL NOT NULL,
+item_name CHARACTER VARYING(100) NOT NULL,
+order_date CHARACTER VARYING(12) NOT NULL,
+quantity INT NOT NULL,
+rate FLOAT NOT NULL,
+order_id INT NOT NULL,
+date_created TIMESTAMP NOT NULL default CURRENT_TIMESTAMP,
+CONSTRAINT "tbl_order_detail_pkey" PRIMARY KEY (id)
+);
+ALTER TABLE tbl_order_detail ADD FOREIGN KEY ("order_id") REFERENCES tbl_order (id);
+
+ALTER SEQUENCE public.tbl_supplier_id_seq RESTART WITH 1 MINVALUE 1;
+ALTER SEQUENCE public.tbl_order_id_seq RESTART WITH 1 MINVALUE 1;
+ALTER SEQUENCE public.tbl_order_detail_id_seq RESTART WITH 1 MINVALUE 1;
+
+INSERT INTO tbl_supplier(supplier_name) VALUES ('Tata Steel');
+INSERT INTO tbl_supplier(supplier_name) VALUES ('Techno corner');
+INSERT INTO tbl_supplier(supplier_name) VALUES ('Basic movers');
